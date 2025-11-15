@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopIT - boutique PC hardware with curated picks and fast fulfillment.">
+    <title>ShopIT | Premium PC Components</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            Shop<span>IT</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+            <a href="#" class="active" data-category-link="all">All</a>
+            <a href="#" data-category-link="motherboards">Motherboards</a>
+            <a href="#" data-category-link="cpu">CPU</a>
+            <a href="#" data-category-link="gpu">GPU</a>
+            <a href="#" data-category-link="ram">RAM</a>
+            <a href="#" data-category-link="storage">Storage</a>
+            <a href="#" data-category-link="psu">PSU</a>
+        </nav>
+        <div class="utility-links">
+            <a href="account.html">My Account</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <p class="tag">PORTFOLIO CONCEPT</p>
+            <h1>ShopIT is my take on a clean hardware landing page.</h1>
+            <p>A curated layout for premium PC parts, designed as a presentation site for my portfolio. Every card feels
+                intentional, with real stock cues, tidy typography, and thoughtful imagery.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary" data-scroll-to="#products">Browse catalog</button>
+                <button class="btn btn-outline" onclick="window.location.href='account.html'">Access account</button>
+            </div>
+        </section>
+
+        <div class="content-grid" id="products">
+            <section class="main-column">
+                <div class="product-toolbar">
+                    <h2 class="section-title">Featured builds ready to ship</h2>
+                    <div class="toolbar-search">
+                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M10 18a8 8 0 1 1 5.292-2.045l4.877 4.876-1.414 1.414-4.876-4.877A7.962 7.962 0 0 1 10 18zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12z">
+                            </path>
+                        </svg>
+                        <input type="search" placeholder="Search products..." aria-label="Search products"
+                            data-search>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card" data-category="gpu">
+                        <img src="assets/images/gpu.jpg" alt="Spectra X RTX 4090 graphics card">
+                        <div class="content">
+                            <span class="tag">RTX 4090</span>
+                            <h3>Spectra X RTX 4090 OC</h3>
+                            <p>Custom triple-fan shroud, vapor chamber baseplate, and a full-length backplate keep this
+                                flagship calm.</p>
+                            <div class="product-meta">
+                                <span class="price">$1,799</span>
+                                <span class="stock">12 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="cpu">
+                        <img src="assets/images/cpu-ryzen.jpg" alt="Ryzen 9 7950X3D processor">
+                        <div class="content">
+                            <span class="tag">Ryzen 9</span>
+                            <h3>Ryzen 9 7950X3D</h3>
+                            <p>16 Zen 4 cores, stacked cache, and tuned curves ready for creators and tournament rigs.</p>
+                            <div class="product-meta">
+                                <span class="price">$699</span>
+                                <span class="stock">34 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="motherboards">
+                        <img src="assets/images/motherboard-x670.jpg" alt="Ascent Pro X670E motherboard">
+                        <div class="content">
+                            <span class="tag">X670E</span>
+                            <h3>Ascent Pro X670E Carbon</h3>
+                            <p>Full ATX layout with DDR5 EXPO, PCIe Gen5 storage lanes, and an 18-phase power stage.</p>
+                            <div class="product-meta">
+                                <span class="price">$459</span>
+                                <span class="stock">24 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="ram">
+                        <img src="assets/images/ram-pulse.jpg" alt="Pulse RGB DDR5 memory kit">
+                        <div class="content">
+                            <span class="tag">DDR5 6400</span>
+                            <h3>Pulse RGB 32GB Kit</h3>
+                            <p>Binned Hynix ICs with a low-profile diffuser deliver fast timings without loud lighting.</p>
+                            <div class="product-meta">
+                                <span class="price">$249</span>
+                                <span class="stock">58 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="storage">
+                        <img src="assets/images/ssd-neon.jpg" alt="NeonBlade PCIe 5 SSD">
+                        <div class="content">
+                            <span class="tag">PCIe 5.0</span>
+                            <h3>NeonBlade 2TB NVMe</h3>
+                            <p>Gen5 controller, copper finned heatsink, and sustained 12,000MB/s writes for raw footage.</p>
+                            <div class="product-meta">
+                                <span class="price">$339</span>
+                                <span class="stock low">Low stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="psu">
+                        <img src="assets/images/psu-nova.jpg" alt="Nova Titanium ATX 3.0 power supply">
+                        <div class="content">
+                            <span class="tag">ATX 3.0</span>
+                            <h3>Nova Titanium 1000W</h3>
+                            <p>Silent, fully modular PSU with a native 12VHPWR lead and on-board load telemetry.</p>
+                            <div class="product-meta">
+                                <span class="price">$289</span>
+                                <span class="stock">18 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="motherboards">
+                        <img src="assets/images/motherboard-itx.jpg" alt="Pulse Mini Z790-I motherboard">
+                        <div class="content">
+                            <span class="tag">Z790-I</span>
+                            <h3>Pulse Mini Z790-I WiFi</h3>
+                            <p>Mini-ITX layout with reinforced PCIe slot, stacked M.2 riser, and Wi-Fi 7 built in.</p>
+                            <div class="product-meta">
+                                <span class="price">$399</span>
+                                <span class="stock">11 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="cpu">
+                        <img src="assets/images/cpu-threadripper.jpg" alt="Threadripper 7980X processor">
+                        <div class="content">
+                            <span class="tag">Threadripper</span>
+                            <h3>Threadripper 7980X</h3>
+                            <p>64 cores with ECC validation and massive cache for render farms and color studios.</p>
+                            <div class="product-meta">
+                                <span class="price">$4,999</span>
+                                <span class="stock low">Pre-order</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="ram">
+                        <img src="assets/images/ram-vector.jpg" alt="Vector Pro ECC memory kit">
+                        <div class="content">
+                            <span class="tag">ECC DDR5</span>
+                            <h3>Vector Pro 64GB Kit</h3>
+                            <p>Server-grade ECC modules with onboard thermistors for precise telemetry.</p>
+                            <div class="product-meta">
+                                <span class="price">$389</span>
+                                <span class="stock">29 in stock</span>
+                            </div>
+                            <button class="btn btn-outline">Add to bag</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="emptyState" class="hero empty-state" hidden>
+                    <h3>No items match that query yet.</h3>
+                    <p>Try a different keyword or pick another category to keep exploring our curated picks.</p>
+                </div>
+            </section>
+
+            <aside class="primary-aside" aria-label="Quick links">
+                <article class="aside-card">
+                    <h4>My Account</h4>
+                    <div class="account-summary">
+                        <span>Status: <strong>Verified builder</strong></span>
+                        <span>Last order: Custom RTX build / 3 days ago</span>
+                    </div>
+                    <div class="profile-actions profile-actions--stacked">
+                        <button class="btn btn-primary" onclick="window.location.href='account.html'">Open dashboard</button>
+                    </div>
+                </article>
+
+                <article class="aside-card contact-cta">
+                    <h4>Need guidance?</h4>
+                    <p>Talk to our hardware concierge about compatibility, thermals, or performance goals.</p>
+                    <a class="accent-link" href="contact.html">Chat with us -></a>
+                    <ul class="list-compact">
+                        <li>Same-day build support</li>
+                        <li>Live part compatibility checks</li>
+                        <li>Thermal tuning tips</li>
+                    </ul>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> ShopIT. Built for enthusiasts, trusted by pros.
+    </footer>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

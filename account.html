@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopIT account overview - manage orders, preferences, and wishlist hardware.">
+    <title>ShopIT | My Account</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            Shop<span>IT</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+            <a href="index.html">All</a>
+            <a href="index.html">Motherboards</a>
+            <a href="index.html">CPU</a>
+            <a href="index.html">GPU</a>
+            <a href="index.html">RAM</a>
+            <a href="index.html">Storage</a>
+            <a href="index.html">PSU</a>
+        </nav>
+        <div class="utility-links">
+            <a href="account.html" class="active">My Account</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="subpage-hero">
+            <p class="tag">ACCOUNT CENTER</p>
+            <h1>A sample dashboard for the ShopIT concept.</h1>
+            <p>This mock account view mirrors the structure I deliver to clients: quick stats, saved builds, and
+                intuitive preferences that feel familiar to anyone who shops for hardware.</p>
+            <div class="profile-actions">
+                <button class="btn btn-primary">Start a new build</button>
+                <button class="btn btn-outline">Download invoices</button>
+            </div>
+        </section>
+
+        <div class="cards-grid">
+            <article class="profile-card">
+                <div class="profile-head">
+                    <div class="avatar">AB</div>
+                    <div>
+                        <h3>Alex Builder</h3>
+                        <p>Member since 2018 - Verified hardware pro</p>
+                    </div>
+                </div>
+                <ul class="info-list">
+                    <li><strong>Email</strong>alex@shopit.dev</li>
+                    <li><strong>Phone</strong>+1 (415) 222-0198</li>
+                    <li><strong>Plan</strong>Pro Assembly + Same-day support</li>
+                    <li><strong>Preferred store</strong>ShopIT - San Francisco Lab</li>
+                </ul>
+            </article>
+
+            <article class="profile-card">
+                <h3>Orders & fulfillment</h3>
+                <ul class="info-list">
+                    <li><strong>Open orders</strong>#SO-482913 - Custom loop build</li>
+                    <li><strong>Tracking</strong>FedEx - ETA Nov 14, 2025</li>
+                    <li><strong>Past 12 months</strong>7 completed builds</li>
+                    <li><strong>Warranty claims</strong>0 active</li>
+                </ul>
+                <div class="profile-actions">
+                    <button class="btn btn-outline">View history</button>
+                    <button class="btn btn-outline">Schedule pickup</button>
+                </div>
+            </article>
+
+            <article class="profile-card">
+                <h3>Saved builds</h3>
+                <ul class="info-list">
+                    <li><strong>Creator Rig 2025</strong>Ryzen 9 - RTX 4090 - 64GB DDR5</li>
+                    <li><strong>LAN Cube</strong>i7 14700K - RTX 4070 - mATX</li>
+                    <li><strong>Home Server</strong>EPYC 9354 - ECC 128GB - 36TB array</li>
+                </ul>
+                <button class="btn btn-primary">Open configurator</button>
+            </article>
+
+            <article class="profile-card">
+                <h3>Security & preferences</h3>
+                <ul class="info-list">
+                    <li><strong>Two-factor</strong>Enabled - Authenticator app</li>
+                    <li><strong>Backup codes</strong>Last regenerated 2 months ago</li>
+                    <li><strong>Notifications</strong>Product drops + order status</li>
+                    <li><strong>Addresses</strong>3 saved (Home, Lab, Studio)</li>
+                </ul>
+                <div class="profile-actions">
+                    <button class="btn btn-outline">Manage security</button>
+                    <button class="btn btn-outline">Update addresses</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> ShopIT. Built for enthusiasts, trusted by pros.
+    </footer>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>
